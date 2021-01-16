@@ -1,14 +1,11 @@
 {
   "name": "server",
-  "homepage": "https://niket-iiitu.github.io/MemoriesBackend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon index.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "start": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",

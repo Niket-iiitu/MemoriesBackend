@@ -14,8 +14,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use("/posts", router);
+app.get("/", (req, res) => {
+  res.send("Hello to memories API");
+});
 
-const PORT = process.env.PORT || process.env.PORT;
+const PORT = process.env.PORT || 5000;
 
 mongoose
   .connect(process.env.CONNECTION_URL, {
